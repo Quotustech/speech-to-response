@@ -1,6 +1,6 @@
 {
   "name": "speech_to_text_converter",
-  "version": "2.0.8",
+  "version": "1.0.0",
   "description": "This package convert speech to text",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",

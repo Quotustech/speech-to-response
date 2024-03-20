@@ -1,13 +1,18 @@
-<!-- Speech to Text Converter
+
+# Speech to Text Converter
+
+Speech to Text Converter
 
 This project provides a Speech to Text Converter component for React applications, utilizing the OpenAI API for processing speech input. It allows users to convert spoken words into text and extract specific information such as dates, locations, and counts of persons, children, and adults from the spoken content.
 
-Installation
+# Installation
+
 To install the Speech to Text Converter component, use npm:
 
-'npm install speech_to_text_converter' -->
+npm install speech_to_text_converter
 
-<!-- Usage :
+
+# Usage :
 
 Import the Speech to Text Converter component and necessary dependencies:
 
@@ -57,12 +62,15 @@ const YourComponent = () => {
 };
 
 export default YourComponent;
+
 Ensure you have set the REACT_APP_API_KEY environment variable with your OpenAI API key.
 
-Use the YourComponent in your application where speech-to-text functionality is required. -->
-<!-- 
-Contributing
+Use the YourComponent in your application where speech-to-text functionality is required.
+
+# Contributing
+
 Contributions are welcome! Please follow the standard guidelines for contributing to this project.
 
-License
-This project is licensed under the quotus software solutions License. -->
+# License
+
+This project is licensed under the quotus software solutions License.# speech_to_text_converter
