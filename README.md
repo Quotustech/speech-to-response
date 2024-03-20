@@ -1,4 +1,3 @@
-
 # Speech to Text Converter
 
 Speech to Text Converter
@@ -15,7 +14,7 @@ npm install speech_to_text_converter
 # Usage :
 
 Import the Speech to Text Converter component and necessary dependencies:
-
+```typescript
 import React, { useState } from 'react';
 import { SpeechToText } from 'speech_to_text_converter';
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
@@ -62,6 +61,7 @@ const YourComponent = () => {
 };
 
 export default YourComponent;
+```
 
 Ensure you have set the REACT_APP_API_KEY environment variable with your OpenAI API key.
 
