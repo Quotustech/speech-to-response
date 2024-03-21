@@ -2,11 +2,12 @@ import React, { useEffect, useState, useMemo } from "react";
 import { OpenAI } from "openai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons'
+
 interface SpeechToTextProps {
   apiKey: string;
   SpeechRecognition: any;
   resetTranscript: () => void;
-  browserSupportsSpeechRecognition: boolean
+  browserSupportsSpeechRecognition: boolean;
   transcript: string;
   setJsonStoredData: any;
   mic_color?:string;
@@ -133,9 +134,8 @@ export function SpeechToText({ apiKey,mic_bg_color, SpeechRecognition, resetTran
 
   return (
     <>
-  <div style={{ marginLeft: "20px", position: "relative", display: "inline-block",fontFamily:"serif" }}>
-    <h2>:<u>Speech to Text Converter</u></h2>
-    <button onClick={() => setIsListening(!isListening)} style={{ border: "none", background: "transparent", fontSize: "25px", marginLeft: "130px", position: "relative"}}>
+  <div style={{ position: "relative", display: "inline-block",fontFamily:"serif" }}>
+    <button onClick={() => setIsListening(!isListening)} style={{ border: "none", background: "transparent", fontSize: "25px", position: "relative"}}>
       <FontAwesomeIcon icon={faMicrophone} style={{ color: mic_color || 'brown' }} />
       {isListening && (
         <style>
@@ -171,7 +171,6 @@ export function SpeechToText({ apiKey,mic_bg_color, SpeechRecognition, resetTran
       </style>
       )}
     </button>
-    <p><b>Transcript:</b> {transcript}</p>
   </div>
 </>
   );

@@ -10,7 +10,6 @@ To install the Speech to Text Converter component, use npm:
 
 npm install speech_to_text_converter
 
-
 # Usage :
 
 Import the Speech to Text Converter component and necessary dependencies:
@@ -29,7 +28,6 @@ interface JsonStoredData {
   AdultCount: number | null;
   Transcript: string | null;
 }
-
  Define your component
 const YourComponent = () => {
   const key: string = process.env.REACT_APP_API_KEY || '';
@@ -62,7 +60,6 @@ const YourComponent = () => {
 
 export default YourComponent;
 ```
-
 Ensure you have set the REACT_APP_API_KEY environment variable with your OpenAI API key.
 
 Use the YourComponent in your application where speech-to-text functionality is required.
